@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Pryce Jones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>Thomas Pryce Jones</h1>
+            <p class="subtitle">CTO & Co-Founder at SoyMomo</p>
+            <p class="contact">
+                Santiago, Chile &middot;
+                <a href="mailto:thomas@soymomo.com">thomas@soymomo.com</a> &middot;
+                <a href="https://www.linkedin.com/in/thomas-pryce-jones-a1544594/" target="_blank">LinkedIn</a> &middot;
+                <a href="https://github.com/prycejones" target="_blank">GitHub</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>Systems-oriented engineer and product builder with 10+ years of experience shipping technology that lives in the real world. I architect end-to-end ecosystems &mdash; from custom Android OS builds and device firmware to cloud infrastructure handling tens of thousands of connected devices. My work spans mobile, backend, real-time communications, machine learning, IoT, and hardware-software integration, always under real constraints: low-spec hardware, battery limits, unreliable networks, and telecom regulations across multiple countries. Currently leading all technology at SoyMomo, where our products protect 300,000+ children worldwide.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>CTO & Co-Founder</h3>
+                    <span class="date">2018 &ndash; Present</span>
+                </div>
+                <p class="org">SoyMomo &mdash; Safe Technology for Kids &middot; Santiago, Chile & Barcelona, Spain</p>
+                <p>Built the entire technology organization and stack from zero for a company that has raised $6.78M, reached a $40M valuation, and expanded from Chile to 10+ countries across Latin America and Europe, now entering the US market.</p>
+                <ul>
+                    <li>Sole architect of the full product stack: 6 Android apps (Kotlin), 4 iOS apps (Swift), 30+ backend microservices (Node.js/TypeScript), and a real-time device communication layer &mdash; all from scratch, no legacy code</li>
+                    <li>Built custom Android system-level software using <code>DevicePolicyManager</code>, device owner APIs, and privileged permissions to enforce parental controls, app whitelisting, screen time limits, and content filtering at the OS level</li>
+                    <li>Engineered a custom geolocation platform that fuses GPS, Wi-Fi SSID fingerprinting, and cell tower triangulation server-side &mdash; a proprietary alternative to Google's Geolocation API, optimized for low-power children's devices with aggressive GNSS warm-up strategies to minimize TTFF</li>
+                    <li>Implemented production WebRTC video calling on Android smartwatches with custom ICE/STUN/TURN infrastructure, signaling server, and workarounds for devices lacking <code>NoiseSuppressor</code> and <code>AcousticEchoCanceler</code> hardware support</li>
+                    <li>Designed the IoT fleet infrastructure: custom TCP protocol for watch-to-server communication, device telemetry pipeline (battery, storage, connectivity, app usage, Bluetooth status), OTA firmware updates, and remote diagnostics across tens of thousands of deployed devices</li>
+                    <li>Created "Hey Momo" &mdash; an AI voice assistant for children powered by Groq inference, real-time speech recognition, and TTS, with age-appropriate language guardrails and safety filtering</li>
+                    <li>Built ML pipelines for baby cry detection and classification (TensorFlow/Keras), and AI-powered content moderation that detects cyberbullying, inappropriate text, and explicit content on children's tablets</li>
+                    <li>Designed backend architecture on Parse/Back4App (MongoDB), AWS (EC2, SQS, Lambda, S3), and Cloudflare R2 with 30+ microservices handling device registration, SIM provisioning, push notifications, payments (Stripe), e-commerce integrations (Shopify), and customer service automation</li>
+                    <li>Built direct integrations with telecom providers (Entel, Claro, Gigs) for programmatic SIM activation, data plan management, and SFTP-based provisioning workflows</li>
+                    <li>Led hardware-software coordination with manufacturing partners in Shenzhen: firmware source code negotiations, custom ROM requirements, telecom certification across Chile, Peru, Spain, Germany, and more</li>
+                    <li>Developed internal operations platform: full-stack CS platform (NestJS/Prisma/React) with AI chatbot, NPS feedback system, Zendesk integration, and ops dashboards integrating Bsale and Jumpseller</li>
+                    <li>Integrated Rust into the Android build pipeline via Gradle/Cargo for performance-critical modules</li>
+                    <li>Implemented end-to-end UI test automation using Maestro for tablet flows</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Full Stack Mobile Developer</h3>
+                    <span class="date">2016 &ndash; 2018</span>
+                </div>
+                <p class="org">Pryce Jones Dev (Independent)</p>
+                <ul>
+                    <li>Native Android development for multiple clients, with apps reaching 1M+ cumulative downloads on Google Play</li>
+                    <li>Full ownership from architecture to deployment across diverse domains</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Mobile Developer</h3>
+                    <span class="date">2018</span>
+                </div>
+                <p class="org">Pontificia Universidad Cat&oacute;lica de Chile</p>
+                <ul>
+                    <li>Built cross-platform surgical simulation tools in React Native for medical training applications</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Full Stack Mobile Developer</h3>
+                    <span class="date">2016 &ndash; 2017</span>
+                </div>
+                <p class="org">Tourblink &mdash; Paris, France</p>
+                <ul>
+                    <li>Android development with on-device TensorFlow Lite inference for real-time image recognition in a travel app</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Game Developer</h3>
+                    <span class="date">2015 &ndash; 2017</span>
+                </div>
+                <p class="org">WeTap Studio</p>
+                <ul>
+                    <li>Unity3D game development shipping titles on both Android and iOS platforms</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Programming Teaching Assistant</h3>
+                    <span class="date">2016 &ndash; 2017</span>
+                </div>
+                <p class="org">Pontificia Universidad Cat&oacute;lica de Chile</p>
+                <ul>
+                    <li>Taught programming fundamentals and assisted students in coursework</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Depth</h2>
+            <div class="skills">
+                <div class="skill-group">
+                    <h4>Android & Mobile</h4>
+                    <p>Kotlin, Java, Android SDK, Hilt/Dagger, Room, Coroutines, WorkManager, RecyclerView, system apps, DevicePolicyManager, device owner mode, privileged permissions, screen capture APIs, Firebase (FCM, Crashlytics, Analytics), Parse SDK, React Native, iOS/Swift</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Backend & Cloud</h4>
+                    <p>Node.js, TypeScript, NestJS, Express, Python, Parse Server/Back4App, MongoDB, Prisma ORM, AWS EC2, AWS SQS, AWS Lambda, AWS S3, Cloudflare R2, Supabase, Docker, GitHub Actions, CI/CD</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Real-Time & Communications</h4>
+                    <p>WebRTC (ICE/STUN/TURN, custom signaling), TCP socket protocols, WebSockets, push notifications (FCM/APNs), real-time telemetry pipelines</p>
+                </div>
+                <div class="skill-group">
+                    <h4>IoT & Connected Devices</h4>
+                    <p>Device fleet management, OTA firmware updates, custom TCP device protocols, SIM provisioning (Entel, Claro, Gigs), telecom certification, BLE, NFC, UWB research, GNSS optimization, Wi-Fi/Cell triangulation</p>
+                </div>
+                <div class="skill-group">
+                    <h4>AI & Machine Learning</h4>
+                    <p>OpenAI API, Groq, TensorFlow/Keras, TensorFlow Lite (on-device), OpenCV, speech recognition & TTS, baby cry detection/classification, cyberbullying content moderation, real-time voice assistants</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Frontend & Web</h4>
+                    <p>Next.js, React, Vue, Tailwind CSS, Vercel</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Languages & Systems</h4>
+                    <p>Rust (integrated into Android via Gradle/Cargo), C (macOS), Python, Kotlin, Java, TypeScript, JavaScript, Swift</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Integrations & Commerce</h4>
+                    <p>Stripe (payments & webhooks), Shopify (webhooks & storefront), Zendesk, SendGrid, Bsale, Jumpseller, Apio, Apple Location Services</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h4>SoyMomo Watch Platform</h4>
+                    <p>End-to-end smartwatch ecosystem: Android companion app, custom TCP watch communication protocol, real-time GPS/Wi-Fi/Cell location tracking, WebRTC video calls, voice messaging, geofenced safe zones, classroom mode, and device telemetry dashboard. Rated 4.7/5 on the App Store with 9,000+ reviews. Multiple hardware generations (Space 2.0, 3.0) with backward-compatible infrastructure.</p>
+                </div>
+                <div class="project">
+                    <h4>SoyMomo Tablet Ecosystem</h4>
+                    <p>Custom Android system apps providing OS-level parental controls: app whitelisting, screen time enforcement, content filtering with AI-powered cyberbullying detection, keyboard redesign, SIM detection, OTA firmware updates, and a dedicated parents app for remote management. Includes system-level <code>DevicePolicyManager</code> integration for device owner capabilities.</p>
+                </div>
+                <div class="project">
+                    <h4>Baby Monitor with Cry Detection</h4>
+                    <p>Connected baby monitor platform with ML-based cry detection and classification models trained on custom datasets (TensorFlow/Keras). Real-time audio analysis, HD camera with infrared night vision, temperature sensor, 355&deg; panoramic view, and split-screen multi-camera support.</p>
+                </div>
+                <div class="project">
+                    <h4>Hey Momo &mdash; AI Voice Assistant for Kids</h4>
+                    <p>Child-safe conversational AI assistant running on SoyMomo devices. Built with Groq for low-latency LLM inference, real-time speech recognition, text-to-speech output, and comprehensive content safety filtering. Designed with age-appropriate language, acting as a friend, advisor, and learning companion.</p>
+                </div>
+                <div class="project">
+                    <h4>Custom Geolocation Engine</h4>
+                    <p>Proprietary server-side positioning service inspired by Google's Geolocation API and Skyhook. Fuses GPS coordinates, Wi-Fi SSID fingerprints, and cell tower data with caching layers for performance. Serves as the unified location backend for all SoyMomo device types, with plans for Bluetooth-based indoor positioning.</p>
+                </div>
+                <div class="project">
+                    <h4>Telecom Integration Layer</h4>
+                    <p>Direct API and SFTP integrations with Latin American telecom providers (Entel, Claro) and global eSIM platforms (Gigs) for programmatic SIM activation, data plan provisioning, and lifecycle management across multiple countries and carriers.</p>
+                </div>
+                <div class="project">
+                    <h4>Internal Operations Platform</h4>
+                    <p>Full-stack CS and ops platform built with NestJS, Prisma, and React. Features AI-powered customer service chatbot, NPS feedback system, Zendesk ticket integration, e-commerce ops dashboards (Bsale + Jumpseller), and Stripe/Shopify webhook processing.</p>
+                </div>
+                <div class="project">
+                    <h4>Device Fleet Telemetry</h4>
+                    <p>Real-time monitoring infrastructure collecting battery state, storage/memory usage, installed/running apps, screen time, Bluetooth status, network connectivity, and GNSS fix quality from tens of thousands of deployed devices. Includes a battery history dashboard and remote diagnostics tooling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Scale & Impact</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">300K+</span>
+                    <span class="stat-label">Families protected worldwide</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">80+</span>
+                    <span class="stat-label">Repositories built & maintained</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Countries with active devices</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$40M</span>
+                    <span class="stat-label">Company valuation (2021)</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Android apps in production</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Backend microservices</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Computational Science</h3>
+                    <span class="date">2013 &ndash; 2020</span>
+                </div>
+                <p class="org">Pontificia Universidad Cat&oacute;lica de Chile</p>
+                <p>AI, Software Engineering, Database Design, Computer Architecture, Advanced Programming, Web Technologies</p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Secondary Education</h3>
+                    <span class="date">2008 &ndash; 2012</span>
+                </div>
+                <p class="org">The Kent School &mdash; Santiago, Chile</p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <h3>Middle School</h3>
+                    <span class="date">2005 &ndash; 2007</span>
+                </div>
+                <p class="org">Scuola Media Statale L. Ariosto &mdash; Italy</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <p>English (native) &middot; Spanish (native) &middot; Italian (fluent)</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Thomas Pryce Jones</p>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+
+        function getPreferred() {
+            const saved = localStorage.getItem('theme');
+            if (saved) return saved;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function apply(theme) {
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        apply(getPreferred());
+
+        toggle.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme');
+            apply(current === 'dark' ? 'light' : 'dark');
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                apply(e.matches ? 'dark' : 'light');
+            }
+        });
+    </script>
+</body>
+</html>
