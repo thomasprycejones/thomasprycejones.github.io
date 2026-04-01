@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Pryce Jones</title>
+    <title>Thomas Pryce Jones — CTO & Co-Founder at SoyMomo</title>
+    <meta name="description" content="Systems engineer and product builder. CTO & Co-Founder at SoyMomo, building end-to-end technology protecting 300,000+ children worldwide.">
+    <meta name="author" content="Thomas Pryce Jones">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thomas Pryce Jones — CTO & Co-Founder at SoyMomo">
+    <meta property="og:description" content="Systems engineer and product builder. 10+ years shipping connected devices, Android platforms, and cloud infrastructure at scale.">
+    <meta property="og:url" content="https://thomasprycejones.github.io">
+    <meta property="og:site_name" content="Thomas Pryce Jones">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Thomas Pryce Jones — CTO & Co-Founder at SoyMomo">
+    <meta name="twitter:description" content="Systems engineer and product builder. 10+ years shipping connected devices, Android platforms, and cloud infrastructure at scale.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -283,6 +301,14 @@
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
             if (!localStorage.getItem('theme')) {
                 apply(e.matches ? 'dark' : 'light');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            if (e.key === 'd' || e.key === 'D') {
+                const current = root.getAttribute('data-theme');
+                apply(current === 'dark' ? 'light' : 'dark');
             }
         });
     </script>
